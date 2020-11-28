@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "ncc build src/main.ts",
-    "start": "pm2 start dist/index.js"
+    "start": "pm2 start dist/index.js",
+    "stop": "pm2 kill",
+    "all": "npm run build && npm run start"
   },
   "keywords": [],
   "author": "",
